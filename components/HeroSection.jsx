@@ -17,13 +17,10 @@ const HeroSection = () => {
           <p className="text-lg mt-4 mb-6 md:text-2xl">
             I&#39;m a passionate{" "}
             <span className="font-semibold text-teal-600">
-              Software Engineer{" "}
+              Software Engineer 👨‍💻{" "}
             </span>
-            with a proven track record of delivering exceptional results. With a
-            deep understanding of the latest technological advancements and a
-            strong background in coding and software development, I have
-            successfully contributed to the success of numerous projects
-            throughout my career.
+            crafting seamless user experiences through creative coding and
+            innovative design 🚀
           </p>
           <Link
             to="projects"
