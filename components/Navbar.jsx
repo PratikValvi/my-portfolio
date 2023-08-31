@@ -71,7 +71,7 @@ const Navbar = () => {
                   </Link>
                 );
               })}
-              {currentTheme === "dark" ? (
+              {/* {currentTheme === "dark" ? (
                 <button
                   onClick={() => setTheme("light")}
                   className="bg-slate-100 p-2 rounded-xl"
@@ -85,7 +85,7 @@ const Navbar = () => {
                 >
                   <RiMoonFill size={25} />
                 </button>
-              )}
+              )} */}
             </div>
           </div>
         </div>
