@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
-import { Link } from "react-scroll/modules";
+import { Link as ScrollLink } from "react-scroll/modules";
 import { HiArrowDown } from "react-icons/hi";
+import { FaDownload } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
@@ -22,21 +23,28 @@ const HeroSection = () => {
             crafting seamless user experiences through creative coding and
             innovative design 🚀
           </p>
-          <Link
-            to="projects"
-            className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-          >
-            Projects
-          </Link>
+          <div className="flex items-center justiby-between p-4">
+            <ScrollLink
+              to="projects"
+              className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+            >
+              Projects
+            </ScrollLink>
+            <a href="https://drive.google.com/file/d/1_ERG4JGZaTsnOCNICw9pJAkOt7kcyZ0b/view?usp=sharing">
+              <button className="flex items-center justify-between text-neutral-100 font-semibold px-6 py-3 ml-4 bg-teal-600 rounded shadow hover:bg-teal-700">
+                Resume <FaDownload size={18} className="ml-2 animate-bounce" />
+              </button>
+            </a>
+          </div>
         </div>
       </div>
       <div className="flex flex-row items-center text-center justify-center ">
-        <Link
+        <ScrollLink
           to="about"
           activeClass="active"
           spy={true}
@@ -45,7 +53,7 @@ const HeroSection = () => {
           duration={500}
         >
           <HiArrowDown size={35} className="animate-bounce" />
-        </Link>
+        </ScrollLink>
       </div>
     </section>
   );
