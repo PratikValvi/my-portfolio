@@ -35,7 +35,7 @@ const HeroSection = () => {
             >
               Projects
             </ScrollLink>
-            <a href="https://drive.google.com/file/d/1_ERG4JGZaTsnOCNICw9pJAkOt7kcyZ0b/view?usp=sharing">
+            <a href="https://drive.google.com/file/d/1aQNrq_x6Gctpj1dpLL3VsBHyDtBxs5qR/view?usp=sharing">
               <button className="flex items-center justify-between text-neutral-100 font-semibold px-6 py-3 ml-4 bg-teal-600 rounded shadow hover:bg-teal-700">
                 Resume <FaDownload size={18} className="ml-2 animate-bounce" />
               </button>
